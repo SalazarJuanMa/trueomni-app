@@ -2,9 +2,11 @@
   "name": "true-omni",
   "version": "0.0.0",
   "scripts": {
+    "ng-high-memory": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "build:ssr": "ng run login:server:dev",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
