@@ -2,11 +2,11 @@
 
 <div class="home-component" [style.width.px]="width" [style.height.px]="height" onclick="resizePanel()">
 
-  <mat-paginator #paginator 
+  <!-- <mat-paginator #paginator 
   [length]="trueOmniResponse.length" 
   [pageSize]="5" 
   [pageSizeOptions]="[5, 10, 25, 100]" 
-  [showFirstLastButtons]="true"></mat-paginator>
+  [showFirstLastButtons]="true"></mat-paginator> -->
   
     <mat-grid-list cols="{{columns}}" rowHeight="2:1" >
             <mat-grid-tile *ngFor="let item of trueOmniResponse">
