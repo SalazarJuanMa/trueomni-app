@@ -12,4 +12,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
-export const COOKIE_DOMAIN = 'localhost';
+export const COOKIE_DOMAIN = 'trueomni-api.azurewebsites.net';
