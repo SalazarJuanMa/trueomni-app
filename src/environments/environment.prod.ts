@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  FP_SERVER_PORT: 'https://trueomni-api.azurewebsites.net/domain',
+  FP_SERVER_PORT: 'https://trueomni-api.azurewebsites.net',
   envName: 'dev'
 };
 
