@@ -5,19 +5,65 @@
 
 .container {
   position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0faabe;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* FIRST Container */
+/* .container {
+  position: relative;
   text-align: center;
   color: rgb(243, 140, 6);
 }
 
-/* Centered text */
 .centered {
   font-size: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
+/* END FIRS CONTAINER */
+
+/* CARD */
 /* 
 .example-card {
     max-width: 200px;
@@ -37,3 +83,5 @@
     background-image: url('https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png');
     background-size: cover;
   } */
+
+  /* END CARD */

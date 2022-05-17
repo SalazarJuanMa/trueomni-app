@@ -27,7 +27,7 @@ export class DomainInfoComponent implements OnInit {
     };
     this.trueOmniService.getDomainsPost(reqObject).subscribe(trueOmniResponse => {
       this.trueOmniResponse = trueOmniResponse;
-      if (this.trueOmniResponse.length >= 30) {
+      if (this.trueOmniResponse.length > 30) {
         this.columns = 3;
         this.width = 700;
         this.height = 1000;
@@ -41,8 +41,8 @@ export class DomainInfoComponent implements OnInit {
     });
   } 
   
-  resizePanel(){
-    if (this.trueOmniResponse.length >= 30) {
+  resizePanel(){    
+    if (this.trueOmniResponse.length > 30) {
       this.columns = 3;
       this.width = 700;
       this.height = 1000;
