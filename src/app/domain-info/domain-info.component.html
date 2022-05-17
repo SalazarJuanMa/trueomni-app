@@ -1,0 +1,28 @@
+<p>Domain Info!</p>
+
+<div class="home-component" [style.width.px]="width" [style.height.px]="height" onclick="resizePanel()">
+
+  <mat-paginator #paginator 
+  [length]="trueOmniResponse.length" 
+  [pageSize]="5" 
+  [pageSizeOptions]="[5, 10, 25, 100]" 
+  [showFirstLastButtons]="true"></mat-paginator>
+  
+    <mat-grid-list cols="{{columns}}" rowHeight="2:1" >
+            <mat-grid-tile *ngFor="let item of trueOmniResponse">
+                <div class="container">
+                    <img [src]="item.ImageList" alt="Snow" style="width:100%;">
+                    <div class="centered">{{ item.Company }}</div>
+                </div>
+                <!-- <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title >  {{ item.Company }}</mat-card-title>
+                      <mat-card-subtitle> Category: {{ item.CategoryID }}</mat-card-subtitle>
+                    </mat-card-header>
+                     <img mat-card-image [src]="item.ImageList" alt=""> 
+                  </mat-card>-->
+            </mat-grid-tile>
+    </mat-grid-list>
+
+</div>
