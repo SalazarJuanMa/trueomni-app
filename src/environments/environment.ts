@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   FP_SERVER_PORT: 'https://localhost:44331',
-  envName: 'dev'
+  envName: 'prod'
 };
 
 /*
